@@ -1,0 +1,5 @@
+# GitHub Pages (Jekyll) only needs this to keep notes and tooling out of the public site.
+exclude:
+  - README.md
+  - SEO.md
+  - _tools

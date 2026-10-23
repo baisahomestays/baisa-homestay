@@ -66,7 +66,7 @@
     } else {
       lbPhoto.setAttribute('data-label', label);
     }
-    lbCaption.textContent = label;
+    lbCaption.textContent = label || (img ? img.alt : '');
     lb.classList.add('open');
     lb.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
@@ -96,36 +96,20 @@
   }
 })();
 
-/* ---- Bilingual toggle (English / हिंदी) ---- */
+/* ---- Language switch ----
+   English lives at / and Hindi at /hi/ (real pages, so Google can index both).
+   The switch is a plain link; this just remembers the choice and keeps the visitor on the same section. */
 (function () {
   'use strict';
-  var KEY = 'baisa-lang';
   var toggle = document.getElementById('lang-toggle');
-  var nodes = [].slice.call(document.querySelectorAll('[data-hi]'));
-  // capture the original English markup once
-  nodes.forEach(function (n) { if (!n.hasAttribute('data-en')) n.setAttribute('data-en', n.innerHTML); });
-
-  function apply(l) {
-    var hi = (l === 'hi');
-    document.documentElement.lang = hi ? 'hi' : 'en';
-    document.body.classList.toggle('lang-hi', hi);
-    nodes.forEach(function (n) {
-      n.innerHTML = hi ? n.getAttribute('data-hi') : n.getAttribute('data-en');
-    });
-    if (toggle) {
-      toggle.textContent = hi ? 'EN' : 'हिंदी';
-      toggle.setAttribute('aria-label', hi ? 'Switch to English' : 'हिंदी में देखें');
-    }
+  if (!toggle) return;
+  function remember() {
+    try { localStorage.setItem('baisa-lang', toggle.getAttribute('hreflang')); } catch (e) {}
   }
-
-  var lang = 'en';
-  try { lang = localStorage.getItem(KEY) || 'en'; } catch (e) {}
-  if (toggle) {
-    toggle.addEventListener('click', function () {
-      lang = (lang === 'hi') ? 'en' : 'hi';
-      try { localStorage.setItem(KEY, lang); } catch (e) {}
-      apply(lang);
-    });
-  }
-  apply(lang);
+  // pointerdown also covers middle-click / "open in new tab", which never fire a normal click
+  toggle.addEventListener('pointerdown', remember);
+  toggle.addEventListener('click', function () {
+    remember();
+    if (location.hash) toggle.href = toggle.getAttribute('href').split('#')[0] + location.hash;
+  });
 })();

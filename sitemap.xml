@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://baisahomestays.github.io/baisa-homestay/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baisahomestays.github.io/baisa-homestay/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://baisahomestays.github.io/baisa-homestay/hi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baisahomestays.github.io/baisa-homestay/"/>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/room-hero.jpg</image:loc></image:image>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/room-ac.jpg</image:loc></image:image>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/room-nonac.jpg</image:loc></image:image>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/room-desk.jpg</image:loc></image:image>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/room-longstay.jpg</image:loc></image:image>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/garden.jpg</image:loc></image:image>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/balcony.jpg</image:loc></image:image>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/corridor.jpg</image:loc></image:image>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/bathroom.jpg</image:loc></image:image>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/room-corner.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://baisahomestays.github.io/baisa-homestay/hi/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baisahomestays.github.io/baisa-homestay/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://baisahomestays.github.io/baisa-homestay/hi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baisahomestays.github.io/baisa-homestay/"/>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/room-hero.jpg</image:loc></image:image>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/room-ac.jpg</image:loc></image:image>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/room-nonac.jpg</image:loc></image:image>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/room-desk.jpg</image:loc></image:image>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/room-longstay.jpg</image:loc></image:image>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/garden.jpg</image:loc></image:image>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/balcony.jpg</image:loc></image:image>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/corridor.jpg</image:loc></image:image>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/bathroom.jpg</image:loc></image:image>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/room-corner.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://baisahomestays.github.io/baisa-homestay/party-hall/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baisahomestays.github.io/baisa-homestay/party-hall/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://baisahomestays.github.io/baisa-homestay/hi/party-hall/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baisahomestays.github.io/baisa-homestay/party-hall/"/>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/hall-interior.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://baisahomestays.github.io/baisa-homestay/hi/party-hall/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baisahomestays.github.io/baisa-homestay/party-hall/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://baisahomestays.github.io/baisa-homestay/hi/party-hall/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baisahomestays.github.io/baisa-homestay/party-hall/"/>
+    <image:image><image:loc>https://baisahomestays.github.io/baisa-homestay/images/hall-interior.jpg</image:loc></image:image>
+  </url>
+</urlset>
