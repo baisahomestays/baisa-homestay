@@ -51,6 +51,12 @@ ADDRESS = {
     "postalCode": "302029",
     "addressCountry": "IN",
 }
+DISAMBIG = {
+    "en": ("Located on Jaipur Ring Road at Vatika-Beelwa in south Jaipur, near Chokhi Dhani (not in Vaishali Nagar). "
+           "Not affiliated with other homestays that have a similar name."),
+    "hi": ("जयपुर रिंग रोड पर वाटिका–बीलवा (दक्षिण जयपुर) में, चोखी ढाणी के पास स्थित (वैशाली नगर में नहीं)। "
+           "मिलते-जुलते नाम वाले अन्य होमस्टे से कोई संबंध नहीं।"),
+}
 BIZ_DESC = {
     "en": ("Baisa Home Stay & Party Hall is a garden homestay on Jaipur Ring Road in the Vatika-Beelwa area, "
            "about 10 minutes from Chokhi Dhani. It has six rooms (three air-conditioned, three non-AC) with work "
@@ -237,7 +243,7 @@ def build_jsonld(page, lang, text, dmod):
 
     business = {
         "@type": "LodgingBusiness", "@id": biz_id, "name": NAME, "alternateName": ALT_NAMES,
-        "description": BIZ_DESC[lang], "url": SITE + "/",
+        "description": BIZ_DESC[lang], "disambiguatingDescription": DISAMBIG[lang], "url": SITE + "/",
         "logo": {"@type": "ImageObject", "url": abs_url(LOGO), "width": 250, "height": 250},
         "image": [abs_url(p) for p in BIZ_IMAGES],
         "telephone": PHONES[0],
@@ -262,7 +268,7 @@ def build_jsonld(page, lang, text, dmod):
 
     venue = {
         "@type": "EventVenue", "@id": venue_id, "name": "Baisa Party Hall" if lang == "en" else "बाईसा पार्टी हॉल",
-        "alternateName": ["Baisa Party Hall", "बाईसा पार्टी हॉल"], "description": VENUE_DESC[lang],
+        "alternateName": ["Baisa Party Hall", "बाईसा पार्टी हॉल"], "description": VENUE_DESC[lang], "disambiguatingDescription": DISAMBIG[lang],
         "url": SITE + "/party-hall/", "telephone": PHONES[0], "address": ADDRESS,
         "geo": {"@type": "GeoCoordinates", "latitude": GEO[0], "longitude": GEO[1]},
         "hasMap": CID_URL, "containedInPlace": {"@id": biz_id},
